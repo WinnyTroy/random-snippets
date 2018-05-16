@@ -11,8 +11,16 @@ for x in dup:
 
 # b.) list of dictionaries for values that are dictionaries with the key cubed and the value raised to power 5
 
-other_dups = second[7:9]
+other_dups = {second[7:9]}
 for x in other_dups:
     for k, v in x.items():
         k *= 3 and v ^ 5
 print other_dups
+
+
+
+# c.) Extract a list of fruits from the list above
+
+for x in second:
+    if type(x) == str:
+        print(second)
