@@ -9,11 +9,10 @@
 
 
 line = "The quick brown fox jumps over the lazy dog"
-data = line.split(' ')
-wordfreq = str(data.count(data))
+data = line.split()
+# wordfreq = str(data.count(data))
+wordfreq = []
 
-
-for key in wordfreq:
-    import pdb;
-    pdb.set_trace()
-    print key, data['key']
+for key in data:
+    wordfreq.append(data.count(key))
+    print dict(zip(data, wordfreq))
