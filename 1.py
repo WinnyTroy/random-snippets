@@ -1,10 +1,13 @@
-integers = []
-
-for x in range(0, 1000):
-    if (x % 3 == 0 or x % 5 == 0):
-        integers.append(x)
-print(integers)
+# -*- coding: utf-8 -*-
 
 
-our_list = [x for x in range(1000) if x % 3 == 0 or x % 5 == 0]
-print(our_list)
+def below_Onethousand():
+    integers = []
+
+    for x in range(0, 1000):
+        if (x % 3 == 0 or x % 5 == 0):
+            integers.append(x)
+    print(integers)
+
+    our_list = [x for x in range(1000) if x % 3 == 0 or x % 5 == 0]
+    print(our_list)

@@ -6,13 +6,13 @@
 
 # split the string into a list of words
 # then create a dictionary where the keys=words : values=number_of_occurences
-
+import string
 
 line = "The quick brown fox jumps over the lazy dog"
-data = line.split()
+data = string.split(line)
 # wordfreq = str(data.count(data))
 wordfreq = []
 
-for key in data:
-    wordfreq.append(data.count(key))
-    print dict(zip(data, wordfreq))
+for word in data:
+    wordfreq.append(data.count(word))
+print dict(zip(data, wordfreq))
